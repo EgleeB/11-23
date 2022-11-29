@@ -8,9 +8,9 @@ html {
 }
 
 :root {
-  --backround-color-main: rgb(241, 207, 83);
+  --backround-color-main: rgb(234, 214, 141);
   --backround-color-secondary: rgb(239, 235, 197);
-  --witdth-main: 80%;
+  --witdth-main: 70%;
 }
 h1 {
   font-size: 3rem;
@@ -66,13 +66,51 @@ header img {
 .gallery-card {
   background-color: white;
   width: var(--witdth-main);
+  border-radius: 5%;
+  background-color: var(--backround-color-secondary);
 }
 
 .gallery-card img {
-  /* height: 100%; */
+  width: 100%;
+  border-radius: 5% 5% 0 0;
+}
+
+.gallery-card h2 {
+  text-align: center;
+  margin: 5% 0;
+}
+
+#section-contact {
+  background-color: var(--backround-color-secondary);
+  padding: 50px 0;
+  justify-content: center;
+  display: flex;
+}
+#section-contact form {
+  display: flex;
+  flex-direction: column;
+  width: var(--witdth-main);
+  row-gap: 20px;
+  align-items: center;
+}
+#section-contact input {
+  height: 50px;
+  font-size: 1.5em;
+  border: none;
   width: 100%;
 }
-#section-contact {
-  height: 300px;
-  background-color: var(--backround-color-secondary);
+#section-contact textarea {
+  height: 200px;
+  font-size: 1.5em;
+  width: 100%;
+  resize: none;
+  border: none;
+}
+#section-contact button {
+  height: 30px;
+  font-size: 1.5em;
+  width: 25%;
+  border: none;
+  background-color: var(--backround-color-main);
+  border-radius: 5%;
 }
